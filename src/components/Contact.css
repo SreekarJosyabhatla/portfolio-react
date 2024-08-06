@@ -1,0 +1,39 @@
+.contact-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0a192f; /* Updated background color */
+  color: #ccd6f6;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-icon {
+  font-size: 1.2rem;
+  color: #64ffda;
+}
+
+.contact-text {
+  font-size: 1rem;
+}
+
+.footer-note {
+  font-size: 0.8rem;
+  color: #a8b2d1;
+}

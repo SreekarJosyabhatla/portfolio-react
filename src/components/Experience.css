@@ -1,0 +1,130 @@
+/* Keyframes for fading in and sliding up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for rotating effect */
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #0a192f 0%, #172a45 100%);
+  color: #ccd6f6;
+  min-height: 100vh;
+  position: relative;
+  perspective: 1000px; /* Enable 3D effect */
+}
+
+.experience-container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 40px 0;
+  padding: 20px 0;
+  border-left: 2px solid #64ffda;
+  text-align: left;
+  animation: fadeInUp 1s ease-out;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #64ffda;
+  top: 0;
+}
+
+.timeline-content {
+  padding-left: 30px;
+}
+
+.timeline-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  animation: rotateIn 1s ease-out;
+}
+
+.timeline-content h4 {
+  font-size: 1.2rem;
+  color: #a8b2d1;
+  margin-bottom: 5px;
+}
+
+.timeline-content span {
+  display: block;
+  font-size: 1rem;
+  color: #8892b0;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 50px 20px;
+  }
+
+  .timeline-item {
+    margin: 30px 0;
+    padding: 15px 0;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.6rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 1rem;
+  }
+
+  .timeline-content span {
+    font-size: 0.9rem;
+  }
+
+  .timeline-content p {
+    font-size: 1rem;
+  }
+}

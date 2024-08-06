@@ -1,0 +1,80 @@
+/* Keyframes for fading in and 3D effect */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #0a192f 0%, #172a45 100%);
+  color: #ccd6f6;
+  min-height: 100vh;
+  position: relative;
+  perspective: 1000px; /* Enable 3D effect */
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  animation: fadeInUp 1s ease-out;
+}
+
+.about-text {
+  max-width: 600px;
+  animation: rotateIn 1s ease-out;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin: 0 0 10px 0;
+}
+
+.line {
+  height: 2px;
+  width: 100px;
+  background-color: #64ffda;
+  margin: 20px auto; /* Center the line */
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 50px 20px;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+}
