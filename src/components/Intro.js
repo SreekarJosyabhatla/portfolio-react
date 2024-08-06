@@ -32,7 +32,7 @@ const Intro = () => {
             >
               <FaGithub />
             </a>
-            <a href="mailto:sreekarsarma2003@email.com" className="mail-icon">
+            <a href="mailto:sreekarsarma2003@gmail.com" className="mail-icon">
               <FaEnvelope />
             </a>
           </div>
