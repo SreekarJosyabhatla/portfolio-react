@@ -13,9 +13,9 @@ const Intro = () => {
         <div className="intro-text">
           <h2>Hello, I'm Sreekar Sarma Josyabhatla</h2>
           <p>
-            I'm a 4th year CSE-AIML student with a passion for Machine Learning
-            and programming. Currently looking for internship opportunities to
-            further my skills and grow my professional network.
+            I am a passionate software engineer and fullstack developer eager to
+            contribute to innovative projects, enhance my skills, and drive
+            technological advancements within a forward-thinking organization.
           </p>
           <div className="social-links">
             <a
@@ -32,7 +32,7 @@ const Intro = () => {
             >
               <FaGithub />
             </a>
-            <a href="mailto:sreekarsarma2003@email.com" className="mail-icon">
+            <a href="mailto:sreekarsarma2003@gmail.com" className="mail-icon">
               <FaEnvelope />
             </a>
           </div>

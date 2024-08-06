@@ -29,7 +29,7 @@ header p {
 
 section {
   padding: 60px 20px;
-  margin-top: 80px;
+  /* margin-top: 80px; */
 }
 
 .intro {
@@ -60,8 +60,8 @@ section {
 }
 
 .intro .profile-image {
-  width: 200px;
-  height: 200px;
+  width: 500px;
+  height: 400px;
   object-fit: cover;
   margin: 0 auto 20px; /* Center image and add margin */
   border: 5px solid #64ffda;

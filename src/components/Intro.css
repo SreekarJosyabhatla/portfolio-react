@@ -44,8 +44,8 @@
 }
 
 .profile-image {
-  width: 250px; /* Larger size */
-  height: 250px; /* Larger size */
+  width: 550px; /* Larger size */
+  height: 350px; /* Larger size */
   object-fit: cover;
   border-radius: 10px;
   border: 5px solid #64ffda;

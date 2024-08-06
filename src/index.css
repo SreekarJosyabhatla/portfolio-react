@@ -24,11 +24,12 @@ a {
 
 a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 section {
   padding: 60px 20px; /* Consistent section padding */
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .container {
